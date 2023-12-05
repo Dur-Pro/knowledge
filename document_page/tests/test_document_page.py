@@ -39,7 +39,7 @@ class TestDocumentPage(common.TransactionCase):
         page = self.page_obj.create({"name": "Test Page 3", "content": "Test content"})
         self.assertEqual(
             page.backend_url,
-            f"/web#id={page.id}&model=document.page&view_type=form",
+            "/web#id={}&model=document.page&view_type=form".format(page.id),
         )
         menu = self.env.ref("document_knowledge.menu_document")
         page.menu_id = menu
