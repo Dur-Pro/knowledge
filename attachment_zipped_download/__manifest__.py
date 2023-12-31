@@ -8,6 +8,11 @@
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "depends": ["base"],
+    'description': """
+This module allows to download multiple attachments in a zip file.
+==================================================================
+This module allows to download multiple attachments in a zip file.
+    """,
     "data": [
         "views/ir_attachment_view.xml",
     ],

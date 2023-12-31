@@ -8,6 +8,11 @@
     "website": "https://github.com/OCA/knowledge",
     "license": "AGPL-3",
     "depends": ["mail"],
+    "description": """
+URL attachment
+==============
+This module allows to attach URL links to any model.
+    """,
     "data": [
         "security/ir.model.access.csv",
         "view/document_url_view.xml",

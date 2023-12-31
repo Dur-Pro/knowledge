@@ -8,6 +8,13 @@
     "website": "https://github.com/OCA/knowledge",
     "license": "AGPL-3",
     "category": "Knowledge Management",
+    "description": """
+This module allows to approve pages.
+=====================================
+This module allows to approve pages. Pages can be approved by a user with
+the group "Document Page Manager" or by a user with the group "Document Page
+Approver" and the same group as the page.
+""",
     "depends": ["document_page", "mail"],
     "data": [
         "data/email_template.xml",

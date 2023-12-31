@@ -15,6 +15,14 @@
         "images/customer_invoice.jpeg",
         "images/page_history.png",
     ],
+    "description": """
+This module allows to create pages and attach them to any object.
+===============================================================
+This module allows to create pages and attach them to any object. Pages are
+written in reStructuredText format and can be exported to PDF. Pages can be
+categorized and organized in a tree structure. Pages can be versioned and
+compared to each other.
+""",
     "website": "https://github.com/OCA/knowledge",
     "license": "AGPL-3",
     "depends": ["mail", "document_knowledge"],

@@ -10,6 +10,11 @@
     "Odoo Community Association (OCA)",
     "category": "Knowledge",
     "license": "AGPL-3",
+    'description': """
+This module is the base for any knowledge and document management application (KB, Wiki, etc.).
+===============================================================================================
+This module is the base for any knowledge and document management application (KB, Wiki, etc.).
+    """,
     "website": "https://github.com/OCA/knowledge",
     "depends": ["base"],
     "data": [

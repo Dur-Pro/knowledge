@@ -10,6 +10,11 @@
     "author": "Creu Blanca,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/knowledge",
     "depends": ["document_page", "web_editor"],
+    "description": """
+Include references on document pages
+====================================
+This module allows to include references on document pages.
+    """,
     "data": [
         "views/document_page.xml",
         "views/report_document_page.xml",
