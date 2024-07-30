@@ -10,10 +10,5 @@
     "author": "Creu Blanca,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/knowledge",
     "depends": ["document_page"],
-    "description": """
-Define access groups on documents
-=================================
-This module allows to define access groups on documents.
-    """,
     "data": ["security/document_page_security.xml", "views/document_page.xml"],
 }

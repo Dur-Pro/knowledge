@@ -61,10 +61,16 @@ class DocumentPageHistory(models.Model):
             return diff.make_table(
                 line1,
                 line2,
-                "Revision-{}".format(v1),
-                "Revision-{}".format(v2),
+                f"Revision-{v1}",
+                f"Revision-{v2}",
                 context=True,
             )
 
+    # TODO: Replace for _compute_display_name
     def name_get(self):
         return [(rec.id, "%s #%i" % (rec.page_id.name, rec.id)) for rec in self]
+
+    @api.depends("page_id")
+    def _compute_display_name(self):
+        for rec in self:
+            rec.display_name = rec.id, "%s #%i" % (rec.page_id.name, rec.id)

@@ -22,7 +22,7 @@
                 <field name="name" />
                 <field name="parent_id" />
                 <field name="company_id" groups="base.group_multi_company" />
-                <field name="create_uid" invisible="1" />
+                <field name="create_uid" column_invisible="1" />
                 <field name="content_uid" />
                 <field name="content_date" />
             </tree>
@@ -39,9 +39,9 @@
                     <div name="button_box" id="button_box" class="oe_button_box" />
                     <widget
                         name="web_ribbon"
-                        text="Archived"
+                        title="Archived"
                         bg_color="bg-danger"
-                        invisible="active == True"
+                        invisible="active"
                     />
                     <field name="active" invisible="1" />
                     <field name="type" invisible="1" />
@@ -63,7 +63,7 @@
                                         name="parent_id"
                                         required="True"
                                         string="Category"
-                                        context="{'default_type':'category'}"
+                                        context="{'default_type':'category', 'form_view_ref': 'document_page.view_category_form'}"
                                     />
                                     <field
                                         name="company_id"
@@ -74,7 +74,7 @@
                                     <field
                                         name="menu_id"
                                         readonly="1"
-                                        invisible="menu_id == False"
+                                        invisible="not menu_id"
                                     />
                                 </group>
                                 <group string="Revision">
@@ -87,6 +87,7 @@
                                         name="draft_summary"
                                         placeholder="eg: Changed ... for ..."
                                         required="True"
+                                        widget="text"
                                     />
                                 </group>
                             </group>

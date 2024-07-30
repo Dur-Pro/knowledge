@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "Documents Knowledge",
-    "version": "17.0.1.1.0",
+    "version": "17.0.1.0.0",
     "author": "OpenERP SA,"
     "MONK Software, "
     "Tecnativa, "
@@ -10,11 +10,6 @@
     "Odoo Community Association (OCA)",
     "category": "Knowledge",
     "license": "AGPL-3",
-    'description': """
-This module is the base for any knowledge and document management application (KB, Wiki, etc.).
-===============================================================================================
-This module is the base for any knowledge and document management application (KB, Wiki, etc.).
-    """,
     "website": "https://github.com/OCA/knowledge",
     "depends": ["base"],
     "data": [

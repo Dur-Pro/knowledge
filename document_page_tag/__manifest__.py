@@ -10,10 +10,6 @@
     "summary": "Allows you to assign tags or keywords to pages and search for "
     "them afterwards",
     "depends": ["document_page"],
-    "description": """
-Document Page Tag
-=================
-""",
     "data": [
         "views/document_page_tag.xml",
         "views/document_page.xml",

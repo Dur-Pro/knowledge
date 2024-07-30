@@ -59,6 +59,11 @@ msgid "Activity Type Icon"
 msgstr ""
 
 #. module: document_page
+#: model_terms:ir.ui.view,arch_db:document_page.view_wiki_form
+msgid "Archived"
+msgstr ""
+
+#. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_attachment_count
 msgid "Attachment Count"
 msgstr "Счетчик вложений"
@@ -279,7 +284,6 @@ msgstr "Если флажок установлен, новые сообщени�
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__message_has_error
-#: model:ir.model.fields,help:document_page.field_document_page__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 "Если этот флажок установлен, некоторые сообщения имеют ошибку доставки."
@@ -347,6 +351,7 @@ msgid "Manager"
 msgstr "Менеджер"
 
 #. module: document_page
+#: model:ir.model,name:document_page.model_ir_ui_menu
 #: model:ir.model.fields,field_description:document_page.field_document_page__menu_id
 msgid "Menu"
 msgstr "Меню"
@@ -479,11 +484,6 @@ msgid "Revision"
 msgstr "Редакция"
 
 #. module: document_page
-#: model:ir.model.fields,field_description:document_page.field_document_page__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Ошибка доставки SMS"
-
-#. module: document_page
 #. odoo-python
 #: code:addons/document_page/wizard/document_page_show_diff.py:0
 #, python-format
@@ -588,6 +588,9 @@ msgstr "или"
 #, python-format
 msgid "summary"
 msgstr ""
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Ошибка доставки SMS"
 
 #~ msgid "Document History"
 #~ msgstr "История документа"
